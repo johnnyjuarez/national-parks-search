@@ -53,7 +53,6 @@ const submitHandler = function () {
         }
         return response.json();
       }).then(parks => {
-        console.log(parks.data);
         parks.data.forEach(d => parkInfo.fullNames.push(d.fullName));
         parks.data.forEach(d => parkInfo.descriptions.push(d.description));
         parks.data.forEach(d => parkInfo.urls.push(d.url));
